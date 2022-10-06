@@ -1,0 +1,6 @@
+.tool {
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  gap: 10px;
+}
