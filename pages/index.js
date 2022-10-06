@@ -6,16 +6,23 @@ function Header({ title }) {
 
 export default function HomePage() {
   const [likes, setLikes] = useState(0);
-  
-  const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
+
+  const names = [
+    "Product Development",
+    "Project Management",
+    "QA Testing",
+    "DevOps Engineering",
+    "UI/UX Design",
+  ];
 
   function handleClick() {
-    setLikes(likes + 5);
+    setLikes(likes + 1);
   }
 
   return (
     <div>
       <Header title="Code your Future at Archi's Academy 🚀" />
+      <h3>Available Content</h3>
       <ul>
         {names.map((name) => (
           <li key={name}>{name}</li>
