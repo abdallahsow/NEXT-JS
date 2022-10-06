@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Archi's Academy!</a>
+          Welcome to the{" "}
+          <Link href="/posts/first-post">JavaScipt Universe</Link>
         </h1>
 
         <p className={styles.description}>Code your Future</p>
@@ -30,7 +32,8 @@ export default function Home() {
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Project Management &rarr;</h2>
             <p>
-              Our project management course molds you into an organization leader
+              Our project management course molds you into an organization
+              leader
             </p>
           </a>
 
